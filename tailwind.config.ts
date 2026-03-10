@@ -57,6 +57,7 @@ const config: Config = {
         purple: {
           deep: "hsl(var(--purple-deep))",
           light: "hsl(var(--purple-light))",
+          dark: "hsl(var(--purple-dark))",
         },
         indigo: "hsl(var(--indigo))",
         slate: "hsl(var(--slate))",
