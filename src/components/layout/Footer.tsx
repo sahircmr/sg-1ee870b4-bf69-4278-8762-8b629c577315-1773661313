@@ -18,18 +18,19 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</Link></li>
+              <li><Link href="/services" className="text-muted-foreground hover:text-foreground transition-colors">Services</Link></li>
               <li><Link href="/products" className="text-muted-foreground hover:text-foreground transition-colors">Products</Link></li>
               <li><Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="font-semibold mb-4">Products</h4>
             <ul className="space-y-2 text-sm">
+              <li><Link href="/products/felixatouch" className="text-muted-foreground hover:text-foreground transition-colors">FelixaTouch</Link></li>
+              <li><Link href="/products/felixacare" className="text-muted-foreground hover:text-foreground transition-colors">FelixaCare</Link></li>
               <li><Link href="/services#healthcare" className="text-muted-foreground hover:text-foreground transition-colors">Healthcare Software</Link></li>
               <li><Link href="/services#web" className="text-muted-foreground hover:text-foreground transition-colors">Web Development</Link></li>
-              <li><Link href="/services#mobile" className="text-muted-foreground hover:text-foreground transition-colors">Mobile Apps</Link></li>
-              <li><Link href="/services#ai" className="text-muted-foreground hover:text-foreground transition-colors">AI Integration</Link></li>
             </ul>
           </div>
 
