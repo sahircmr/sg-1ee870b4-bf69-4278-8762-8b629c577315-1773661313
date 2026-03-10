@@ -20,7 +20,7 @@ export default function FelixaCare() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="py-16 md:py-32 bg-gradient-to-br from-indigo to-primary text-white">
+        <section className="py-16 md:py-32 pattern-grid text-white">
           <div className="container">
             <div className="mx-auto max-w-4xl">
               <div className="flex items-center gap-3 mb-6">

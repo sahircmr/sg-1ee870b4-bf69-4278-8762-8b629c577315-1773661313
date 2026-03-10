@@ -12,30 +12,27 @@
     --card-foreground: 240 35% 15%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 35% 15%;
-    --primary: 289 35% 50%;
+    --primary: 291 35% 49%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 289 25% 60%;
+    --secondary: 291 30% 60%;
     --secondary-foreground: 0 0% 100%;
     --muted: 240 10% 95%;
     --muted-foreground: 240 10% 45%;
-    --accent: 289 35% 50%;
+    --accent: 291 35% 49%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     --border: 240 10% 90%;
     --input: 240 10% 90%;
-    --ring: 289 35% 50%;
+    --ring: 291 35% 49%;
     --radius: 0.5rem;
     
-    --purple-deep: 289 35% 50%;
-    --purple-light: 289 35% 95%;
-    --purple-dark: 289 35% 35%;
-    --indigo: 289 25% 60%;
+    --purple-deep: 291 35% 49%;
+    --purple-light: 291 35% 95%;
+    --purple-dark: 291 35% 35%;
+    --indigo: 291 30% 60%;
     --slate: 240 35% 15%;
     --cream: 40 20% 97%;
-    
-    --gradient-hero: linear-gradient(135deg, hsl(289 35% 50%) 0%, hsl(289 25% 60%) 100%);
-    --gradient-card: linear-gradient(to bottom, hsl(0 0% 100%), hsl(289 35% 98%));
   }
 }
 
@@ -54,5 +51,36 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .pattern-dots {
+    background-color: hsl(var(--primary));
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .pattern-grid {
+    background-color: hsl(var(--primary));
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+  
+  .pattern-diagonal {
+    background-color: hsl(var(--primary));
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(255, 255, 255, 0.08) 10px,
+      rgba(255, 255, 255, 0.08) 20px
+    );
+  }
+  
+  .pattern-subtle-dots {
+    background-color: hsl(var(--purple-light));
+    background-image: radial-gradient(circle, hsl(var(--primary) / 0.12) 1px, transparent 1px);
+    background-size: 16px 16px;
   }
 }

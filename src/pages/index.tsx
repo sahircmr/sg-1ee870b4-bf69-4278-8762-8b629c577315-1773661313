@@ -16,8 +16,7 @@ export default function Home() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-hero py-24 md:py-32">
-          <div className="absolute inset-0 bg-grid-white/10" />
+        <section className="relative overflow-hidden pattern-dots py-24 md:py-32">
           <div className="container relative z-10">
             <div className="mx-auto max-w-3xl text-center text-white">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance">
@@ -60,7 +59,7 @@ export default function Home() {
         </section>
 
         {/* Services Overview */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-16 md:py-24 pattern-subtle-dots">
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">What We Do</h2>
@@ -70,7 +69,7 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card className="bg-gradient-card border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader>
                   <Hospital className="h-12 w-12 text-primary mb-4" />
                   <CardTitle>Healthcare Software</CardTitle>
@@ -80,7 +79,7 @@ export default function Home() {
                 </CardHeader>
               </Card>
 
-              <Card className="bg-gradient-card border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader>
                   <Code className="h-12 w-12 text-primary mb-4" />
                   <CardTitle>Web Development</CardTitle>
@@ -90,7 +89,7 @@ export default function Home() {
                 </CardHeader>
               </Card>
 
-              <Card className="bg-gradient-card border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader>
                   <Smartphone className="h-12 w-12 text-primary mb-4" />
                   <CardTitle>Mobile Apps</CardTitle>
@@ -100,7 +99,7 @@ export default function Home() {
                 </CardHeader>
               </Card>
 
-              <Card className="bg-gradient-card border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader>
                   <Brain className="h-12 w-12 text-primary mb-4" />
                   <CardTitle>AI Integration</CardTitle>
@@ -110,7 +109,7 @@ export default function Home() {
                 </CardHeader>
               </Card>
 
-              <Card className="bg-gradient-card border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader>
                   <LineChart className="h-12 w-12 text-primary mb-4" />
                   <CardTitle>SEO & Digital Growth</CardTitle>
@@ -120,7 +119,7 @@ export default function Home() {
                 </CardHeader>
               </Card>
 
-              <Card className="bg-gradient-card border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader>
                   <Zap className="h-12 w-12 text-primary mb-4" />
                   <CardTitle>Rapid Prototyping</CardTitle>
@@ -182,7 +181,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-gradient-hero">
+        <section className="py-16 md:py-24 pattern-grid">
           <div className="container">
             <div className="mx-auto max-w-3xl text-center text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">

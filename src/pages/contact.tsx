@@ -24,7 +24,7 @@ export default function Contact() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-purple-light to-background">
+        <section className="py-16 md:py-24 pattern-subtle-dots">
           <div className="container">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Let's Build Something Together</h1>
@@ -150,7 +150,7 @@ export default function Contact() {
                   </CardContent>
                 </Card>
 
-                <Card className="border-0 shadow-sm bg-gradient-hero text-white">
+                <Card className="border-0 shadow-sm pattern-dots text-white">
                   <CardContent className="pt-6">
                     <h3 className="text-xl font-semibold mb-2">Visit Our Website</h3>
                     <a 

@@ -20,7 +20,7 @@ export default function FelixaTouch() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="py-16 md:py-32 bg-gradient-hero text-white">
+        <section className="py-16 md:py-32 pattern-dots text-white">
           <div className="container">
             <div className="mx-auto max-w-4xl">
               <div className="flex items-center gap-3 mb-6">

@@ -16,7 +16,7 @@ export default function Products() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-purple-light to-background">
+        <section className="py-16 md:py-24 pattern-subtle-dots">
           <div className="container">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Healthcare Products</h1>
@@ -40,7 +40,7 @@ export default function Products() {
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* FelixaTouch */}
               <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="bg-gradient-hero text-white pb-12">
+                <CardHeader className="pattern-dots text-white pb-12">
                   <Hospital className="h-12 w-12 mb-4" />
                   <CardTitle className="text-2xl">FelixaTouch</CardTitle>
                   <CardDescription className="text-white/90">
@@ -75,7 +75,7 @@ export default function Products() {
 
               {/* FelixaCare */}
               <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="bg-gradient-to-br from-indigo to-primary text-white pb-12">
+                <CardHeader className="pattern-grid text-white pb-12">
                   <Hospital className="h-12 w-12 mb-4" />
                   <CardTitle className="text-2xl">FelixaCare</CardTitle>
                   <CardDescription className="text-white/90">

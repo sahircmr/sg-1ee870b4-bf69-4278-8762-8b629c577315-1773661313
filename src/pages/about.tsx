@@ -14,7 +14,7 @@ export default function About() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-purple-light to-background">
+        <section className="py-16 md:py-24 pattern-subtle-dots">
           <div className="container">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Who We Are</h1>

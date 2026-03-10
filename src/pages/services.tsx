@@ -17,7 +17,7 @@ export default function Services() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-purple-light to-background">
+        <section className="py-16 md:py-24 pattern-subtle-dots">
           <div className="container">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
@@ -58,7 +58,7 @@ export default function Services() {
                       </div>
                     </div>
                   </div>
-                  <div className="md:w-1/3 bg-gradient-hero p-8 md:p-12 flex items-center justify-center">
+                  <div className="md:w-1/3 pattern-dots p-8 md:p-12 flex items-center justify-center">
                     <Link href="/products">
                       <Button size="lg" variant="secondary">
                         View Healthcare Products <ArrowRight className="ml-2 h-4 w-4" />
@@ -91,7 +91,7 @@ export default function Services() {
                       <Badge variant="secondary">PostgreSQL</Badge>
                     </div>
                   </div>
-                  <div className="md:w-1/3 bg-gradient-to-br from-indigo to-primary p-8 md:p-12 flex items-center justify-center">
+                  <div className="md:w-1/3 pattern-grid p-8 md:p-12 flex items-center justify-center">
                     <Link href="/contact">
                       <Button size="lg" variant="secondary">
                         Discuss Your Project <ArrowRight className="ml-2 h-4 w-4" />
@@ -123,7 +123,7 @@ export default function Services() {
                       </p>
                     </div>
                   </div>
-                  <div className="md:w-1/3 bg-gradient-hero p-8 md:p-12 flex items-center justify-center">
+                  <div className="md:w-1/3 pattern-diagonal p-8 md:p-12 flex items-center justify-center">
                     <Link href="/contact">
                       <Button size="lg" variant="secondary">
                         Start Your App <ArrowRight className="ml-2 h-4 w-4" />
@@ -149,7 +149,7 @@ export default function Services() {
                       We integrate AI capabilities into your existing software or build AI-native products from the ground up — including intelligent data processing, predictive features, chatbots, and workflow automation.
                     </p>
                   </div>
-                  <div className="md:w-1/3 bg-gradient-to-br from-indigo to-primary p-8 md:p-12 flex items-center justify-center">
+                  <div className="md:w-1/3 pattern-dots p-8 md:p-12 flex items-center justify-center">
                     <Link href="/contact">
                       <Button size="lg" variant="secondary">
                         Explore AI Solutions <ArrowRight className="ml-2 h-4 w-4" />
@@ -175,7 +175,7 @@ export default function Services() {
                       From technical audits to on-page optimization and content strategy, we help your website rank higher and attract the right audience organically.
                     </p>
                   </div>
-                  <div className="md:w-1/3 bg-gradient-hero p-8 md:p-12 flex items-center justify-center">
+                  <div className="md:w-1/3 pattern-grid p-8 md:p-12 flex items-center justify-center">
                     <Link href="/contact">
                       <Button size="lg" variant="secondary">
                         Boost Your Rankings <ArrowRight className="ml-2 h-4 w-4" />
@@ -201,7 +201,7 @@ export default function Services() {
                       Need a working product fast? We leverage AI-assisted development platforms like Lovable and Softgen to build and ship MVPs and prototypes in record time — without sacrificing quality.
                     </p>
                   </div>
-                  <div className="md:w-1/3 bg-gradient-to-br from-indigo to-primary p-8 md:p-12 flex items-center justify-center">
+                  <div className="md:w-1/3 pattern-diagonal p-8 md:p-12 flex items-center justify-center">
                     <Link href="/contact">
                       <Button size="lg" variant="secondary">
                         Launch Your MVP <ArrowRight className="ml-2 h-4 w-4" />
