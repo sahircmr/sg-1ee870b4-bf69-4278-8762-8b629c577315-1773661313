@@ -9,7 +9,7 @@ import {
   Users, Calendar, Pill, ClipboardList, FileText, Shield,
   CheckCircle2, Brain, TrendingUp, AlertTriangle, ArrowRight,
   Activity, Utensils, Clock, Award, UserCheck, Home, BarChart3,
-  Lock, Bell, Stethoscope, Database, Zap, Mic, Timeline,
+  Lock, Bell, Stethoscope, Database, Zap, Mic, History,
   Target, TrendingDown, Package
 } from "lucide-react";
 
@@ -428,7 +428,7 @@ export default function FelixaCare() {
               <Card className="border-2 hover:border-primary/50 transition-colors bg-white">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <Timeline className="h-6 w-6 text-primary" />
+                    <History className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold mb-3">Full Documentation</h3>
                   <p className="text-sm text-muted-foreground mb-3">
