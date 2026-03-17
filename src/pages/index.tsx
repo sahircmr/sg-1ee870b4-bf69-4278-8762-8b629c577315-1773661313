@@ -180,6 +180,46 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Recognitions and Partnerships */}
+        <section className="py-16 md:py-24">
+          <div className="container">
+            <div className="mx-auto max-w-3xl text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Recognitions and Partnerships</h2>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-full bg-purple-light flex items-center justify-center mx-auto mb-4">
+                  <Hospital className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Deep Healthcare Expertise</h3>
+                <p className="text-muted-foreground">
+                  Specialized knowledge in healthcare technology and regulatory compliance
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-full bg-purple-light flex items-center justify-center mx-auto mb-4">
+                  <ArrowRight className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">End-to-End Delivery</h3>
+                <p className="text-muted-foreground">
+                  From design to deployment to support, we handle every step
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-full bg-purple-light flex items-center justify-center mx-auto mb-4">
+                  <Zap className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Agile Excellence</h3>
+                <p className="text-muted-foreground">
+                  Fast-moving teams that deliver quality without compromise
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-16 md:py-24 pattern-grid">
           <div className="container">
