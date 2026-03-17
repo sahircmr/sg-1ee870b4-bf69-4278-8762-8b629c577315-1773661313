@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Code, Smartphone, Brain, LineChart, Zap, Hospital } from "lucide-react";
 
 export default function Home() {
@@ -181,41 +182,124 @@ export default function Home() {
         </section>
 
         {/* Recognitions and Partnerships */}
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-muted/30">
           <div className="container">
             <div className="mx-auto max-w-3xl text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Recognitions and Partnerships</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Recognitions and Partnerships</h2>
+              <p className="text-lg text-muted-foreground">
+                Trusted by leading organizations and recognized globally
+              </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-purple-light flex items-center justify-center mx-auto mb-4">
-                  <Hospital className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Deep Healthcare Expertise</h3>
-                <p className="text-muted-foreground">
-                  Specialized knowledge in healthcare technology and regulatory compliance
-                </p>
-              </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Malta Enterprise */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <Image 
+                      src="/malta-enterprise.jpg" 
+                      alt="Malta Enterprise" 
+                      width={200} 
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    EU Business Expansion
+                  </div>
+                  <CardTitle className="text-xl">Malta Enterprise</CardTitle>
+                  <CardDescription>
+                    Engaged with Malta Enterprise for European market expansion and business growth
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-purple-light flex items-center justify-center mx-auto mb-4">
-                  <ArrowRight className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">End-to-End Delivery</h3>
-                <p className="text-muted-foreground">
-                  From design to deployment to support, we handle every step
-                </p>
-              </div>
+              {/* GINSEP */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <Image 
+                      src="/ginsep-logo.jpg" 
+                      alt="GINSEP - German Indian Startup Exchange Program" 
+                      width={200} 
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    German Engagement
+                  </div>
+                  <CardTitle className="text-xl">GINSEP Program</CardTitle>
+                  <CardDescription>
+                    Digital health startup from India selected for German market engagement
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-purple-light flex items-center justify-center mx-auto mb-4">
-                  <Zap className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Agile Excellence</h3>
-                <p className="text-muted-foreground">
-                  Fast-moving teams that deliver quality without compromise
-                </p>
-              </div>
+              {/* Startup India */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <Image 
+                      src="/startup-india.jpg" 
+                      alt="Startup India" 
+                      width={200} 
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Government Recognition
+                  </div>
+                  <CardTitle className="text-xl">Startup India</CardTitle>
+                  <CardDescription>
+                    DPIIT recognized startup by the Government of India
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* Microsoft */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <Image 
+                      src="/microsoft-founders-hub.jpg" 
+                      alt="Microsoft for Startups - Founders Hub" 
+                      width={200} 
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Cloud & Technology Partner
+                  </div>
+                  <CardTitle className="text-xl">Microsoft Partnership</CardTitle>
+                  <CardDescription>
+                    Partnering with Microsoft for Startups Founders Hub program
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* AWS */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <Image 
+                      src="/aws-logo.jpg" 
+                      alt="Amazon Web Services (AWS)" 
+                      width={200} 
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Infrastructure Partner
+                  </div>
+                  <CardTitle className="text-xl">AWS Partnership</CardTitle>
+                  <CardDescription>
+                    Partnering with AWS for scalable, secure cloud infrastructure solutions
+                  </CardDescription>
+                </CardHeader>
+              </Card>
             </div>
           </div>
         </section>
