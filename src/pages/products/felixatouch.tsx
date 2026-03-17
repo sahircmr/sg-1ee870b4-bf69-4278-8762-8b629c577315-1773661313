@@ -5,34 +5,37 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
 import { 
-  Calendar, Users, FileText, CreditCard, BarChart, 
-  Clock, Bell, Shield, Smartphone, CheckCircle2, ArrowRight 
+  FileText, Users, Calendar, Monitor, Pill, 
+  Flask, ClipboardList, MessageSquare, CalendarCheck, FileEdit,
+  Package, CreditCard, Shield, TrendingUp, Award,
+  BarChart3, Calendar as CalendarIcon, Database, Laptop
 } from "lucide-react";
 
 export default function FelixaTouch() {
   return (
     <>
       <SEO 
-        title="FelixaTouch - Clinic Management Software | IntPurple"
-        description="Complete clinic management platform for outpatient facilities. Manage appointments, patient records, billing, and reporting with FelixaTouch."
+        title="FelixaTouch - Cloud-Based Clinic Management Software | IntPurple"
+        description="Complete clinic management software to streamline operations, boost growth, and maximize profitability. EMR, appointments, billing, pharmacy, lab management and more."
       />
       <Header />
       <main>
         {/* Hero */}
         <section className="py-16 md:py-32 pattern-dots text-white">
           <div className="container">
-            <div className="mx-auto max-w-4xl">
+            <div className="mx-auto max-w-5xl">
               <div className="flex items-center gap-3 mb-6">
-                <Badge variant="secondary" className="text-sm">Healthcare Software</Badge>
+                <Badge variant="secondary" className="text-sm">Cloud-Based Software</Badge>
                 <Badge variant="secondary" className="text-sm">Clinic Management</Badge>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">FelixaTouch</h1>
               <p className="text-xl md:text-2xl mb-8 text-white/90">
-                Complete clinic management platform for outpatient facilities
+                Complete clinic management software to streamline operations, boost growth, and maximize profitability
               </p>
               <p className="text-lg mb-10 text-white/80 max-w-3xl">
-                FelixaTouch is an all-in-one solution designed for outpatient clinics, covering appointment scheduling, patient records, billing, insurance processing, and comprehensive reporting. Built to handle the complexity of modern healthcare operations while remaining intuitive and easy to use.
+                Cloud-based clinic software offering a comprehensive suite of features designed to streamline clinic management. With a user-friendly interface and secure data storage in the cloud, FelixaTouch helps healthcare providers deliver exceptional care while optimizing clinic operations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
@@ -50,85 +53,277 @@ export default function FelixaTouch() {
           </div>
         </section>
 
-        {/* Key Features */}
+        {/* Dashboard Preview */}
+        <section className="py-16 md:py-24 bg-muted/30">
+          <div className="container">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Intuitive Multi-Device Interface</h2>
+                <p className="text-lg text-muted-foreground">
+                  Access FelixaTouch from any device - desktop, tablet, or mobile
+                </p>
+              </div>
+              <div className="relative rounded-xl overflow-hidden shadow-2xl">
+                <Image 
+                  src="/felixatouch-dashboard.jpg" 
+                  alt="FelixaTouch Dashboard - Revenue Analytics and Multi-Device Access" 
+                  width={1200} 
+                  height={700}
+                  className="w-full h-auto"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Core Features */}
         <section className="py-16 md:py-24">
           <div className="container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Core Features</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Comprehensive Feature Suite</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Everything you need to run a modern outpatient clinic
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              <Card className="border-0 shadow-sm">
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
                 <CardContent className="pt-6">
-                  <div className="w-12 h-12 rounded-lg bg-purple-light flex items-center justify-center mb-4">
-                    <Calendar className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Smart Scheduling</h3>
-                  <p className="text-muted-foreground">
-                    Intuitive appointment booking with automated reminders, waitlist management, and calendar synchronization.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-sm">
-                <CardContent className="pt-6">
-                  <div className="w-12 h-12 rounded-lg bg-purple-light flex items-center justify-center mb-4">
-                    <Users className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Patient Management</h3>
-                  <p className="text-muted-foreground">
-                    Complete patient profiles with medical history, treatment records, and secure document storage.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-sm">
-                <CardContent className="pt-6">
-                  <div className="w-12 h-12 rounded-lg bg-purple-light flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <FileText className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Electronic Records</h3>
-                  <p className="text-muted-foreground">
-                    Digital health records with consultation notes, prescriptions, and treatment plans in one place.
+                  <h3 className="text-xl font-semibold mb-2">Electronic Medical Records</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Advanced EMR system streamlines patient data management with secure access, updates, and sharing. Ensures compliance with healthcare standards.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-sm">
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
                 <CardContent className="pt-6">
-                  <div className="w-12 h-12 rounded-lg bg-purple-light flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Users className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Patient Demographics</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Comprehensive patient profiles from personal information to medical history. Ensures accurate records and supports informed decision-making.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Calendar className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Queue & Appointment Management</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Streamline patient flow and minimize wait times. Front desk can generate, prioritize, cancel, or pause queues with real-time monitoring.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Monitor className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Token Display System</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Integrates with token display boards to manage patient flow efficiently. Real-time notifications reduce crowding and enhance patient experience.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <ClipboardList className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Impressive Prescriptions</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Create clear, professional prescriptions in just a few clicks. Customizable templates and intuitive design ensure better patient communication.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Flask className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Lab Management</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Comprehensive lab management with seamless test ordering, sample tracking, and result management directly in the EMR.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Pill className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Pharmacy Management</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Manage in-house or partnered pharmacy with ease. Track prescriptions, stock levels, expiry dates, and sales in real-time.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <FileEdit className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Procedure Management</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Organize and track clinical procedures with structured ordering and documentation. Ensures standardization and accurate billing.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <MessageSquare className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Engagement Messaging</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Automated SMS, email, or WhatsApp reminders. Send appointment confirmations, follow-ups, health tips, and promotional offers.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <CalendarCheck className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Next-Visit Setup</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Schedule follow-ups seamlessly during consultation. Ensures patients stay on track with treatment plans and reduces drop-offs.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <FileText className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Easy Templates Creation</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Set customized templates for patient records, prescriptions, and other clinical documents in minutes.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Package className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Inventory Management</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Monitor and control clinic stock with automated reorder alerts, usage tracking, and prevention of wastage.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <CreditCard className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Billing & Payments</h3>
-                  <p className="text-muted-foreground">
-                    Automated invoicing, insurance claim processing, and multiple payment method support.
+                  <h3 className="text-xl font-semibold mb-2">Payment & Billing System</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Seamless, secure, and flexible payment system ensuring accurate transaction tracking for effortless financial management.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-sm">
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
                 <CardContent className="pt-6">
-                  <div className="w-12 h-12 rounded-lg bg-purple-light flex items-center justify-center mb-4">
-                    <BarChart className="h-6 w-6 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Shield className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Analytics & Reports</h3>
-                  <p className="text-muted-foreground">
-                    Real-time dashboards and customizable reports for clinical and business insights.
+                  <h3 className="text-xl font-semibold mb-2">Insurance Management</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Handle insurance claims, approvals, and settlements within the platform. Supports multiple insurers with simplified documentation.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-sm">
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
                 <CardContent className="pt-6">
-                  <div className="w-12 h-12 rounded-lg bg-purple-light flex items-center justify-center mb-4">
-                    <Bell className="h-6 w-6 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Award className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Notifications</h3>
-                  <p className="text-muted-foreground">
-                    Automated SMS and email reminders for appointments, follow-ups, and payments.
+                  <h3 className="text-xl font-semibold mb-2">Incentive & Commission</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Motivate your team with performance-based incentives. Automatically calculate commissions for doctors, lab technicians, or staff.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <BarChart3 className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Analytics Dashboards</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Monitor clinic performance with real-time insights, detailed reports, and key metrics to optimize operations and patient care.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <TrendingUp className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Revenue Dashboards</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Track financial health with intuitive revenue dashboards. Visualize income streams from consultations, labs, pharmacy, and procedures.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <CalendarIcon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Custom Date-Wise Reports</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Generate detailed reports filtered by custom date ranges. Analyze performance, revenue, expenses, and patient inflow with precision.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Laptop className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Unlimited Device Connections</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Connect infinite devices from any location. Accessible from tablets, desktops, and laptops for seamless access.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Database className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Unlimited Patient Records</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Securely store unlimited patient records with easy access and seamless management. Cloud-based storage ensures data safety.
                   </p>
                 </CardContent>
               </Card>
@@ -136,71 +331,98 @@ export default function FelixaTouch() {
           </div>
         </section>
 
-        {/* Benefits */}
+        {/* Key Benefits */}
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container">
-            <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose FelixaTouch?</h2>
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <CheckCircle2 className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold mb-1">Reduce Administrative Overhead</h3>
-                      <p className="text-muted-foreground">Automate routine tasks and let your staff focus on patient care.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle2 className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold mb-1">Improve Patient Experience</h3>
-                      <p className="text-muted-foreground">Online booking, automated reminders, and faster check-in processes.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle2 className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold mb-1">Data-Driven Decisions</h3>
-                      <p className="text-muted-foreground">Access real-time analytics to optimize clinic operations and revenue.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle2 className="h-6 w-6 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold mb-1">Compliance & Security</h3>
-                      <p className="text-muted-foreground">Built with healthcare regulations and data security standards in mind.</p>
-                    </div>
-                  </div>
-                </div>
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose FelixaTouch?</h2>
+                <p className="text-lg text-muted-foreground">
+                  Transform your clinic with cloud-based efficiency
+                </p>
               </div>
 
-              <div className="space-y-6">
-                <Card className="border-0 shadow-sm">
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card className="bg-white border">
                   <CardContent className="pt-6">
-                    <Clock className="h-8 w-8 text-primary mb-3" />
-                    <h3 className="text-xl font-semibold mb-2">Save Time</h3>
-                    <p className="text-muted-foreground">
-                      Reduce appointment scheduling time by 60% with automated booking and calendar management.
+                    <h3 className="text-xl font-semibold mb-3 flex items-center">
+                      <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        ✓
+                      </span>
+                      Cloud-Based Security
+                    </h3>
+                    <p className="text-muted-foreground ml-11">
+                      Secure data storage in the cloud with automatic backups, ensuring your patient records are always safe and accessible from anywhere.
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border-0 shadow-sm">
+                <Card className="bg-white border">
                   <CardContent className="pt-6">
-                    <Smartphone className="h-8 w-8 text-primary mb-3" />
-                    <h3 className="text-xl font-semibold mb-2">Mobile Access</h3>
-                    <p className="text-muted-foreground">
-                      Access patient records and manage your clinic from any device, anywhere.
+                    <h3 className="text-xl font-semibold mb-3 flex items-center">
+                      <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        ✓
+                      </span>
+                      User-Friendly Interface
+                    </h3>
+                    <p className="text-muted-foreground ml-11">
+                      Intuitive design makes it easy for your staff to adopt and use effectively, reducing training time and increasing productivity.
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border-0 shadow-sm">
+                <Card className="bg-white border">
                   <CardContent className="pt-6">
-                    <Shield className="h-8 w-8 text-primary mb-3" />
-                    <h3 className="text-xl font-semibold mb-2">Secure & Reliable</h3>
-                    <p className="text-muted-foreground">
-                      Bank-level encryption and automated backups keep your data safe and accessible.
+                    <h3 className="text-xl font-semibold mb-3 flex items-center">
+                      <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        ✓
+                      </span>
+                      Streamlined Operations
+                    </h3>
+                    <p className="text-muted-foreground ml-11">
+                      From appointment scheduling to billing, every aspect of clinic management is optimized for maximum efficiency and minimum effort.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border">
+                  <CardContent className="pt-6">
+                    <h3 className="text-xl font-semibold mb-3 flex items-center">
+                      <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        ✓
+                      </span>
+                      Maximize Profitability
+                    </h3>
+                    <p className="text-muted-foreground ml-11">
+                      Real-time revenue analytics, automated billing, and inventory management help you identify growth opportunities and reduce costs.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border">
+                  <CardContent className="pt-6">
+                    <h3 className="text-xl font-semibold mb-3 flex items-center">
+                      <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        ✓
+                      </span>
+                      Enhanced Patient Experience
+                    </h3>
+                    <p className="text-muted-foreground ml-11">
+                      Token displays, automated reminders, and shorter wait times improve patient satisfaction and increase retention rates.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border">
+                  <CardContent className="pt-6">
+                    <h3 className="text-xl font-semibold mb-3 flex items-center">
+                      <span className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                        ✓
+                      </span>
+                      Scalable Solution
+                    </h3>
+                    <p className="text-muted-foreground ml-11">
+                      Whether you're a single clinic or a multi-location healthcare network, FelixaTouch grows with your business needs.
                     </p>
                   </CardContent>
                 </Card>
@@ -209,21 +431,28 @@ export default function FelixaTouch() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* CTA Section */}
         <section className="py-16 md:py-24">
           <div className="container">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Modernize Your Clinic?
+                Ready to Transform Your Clinic?
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Schedule a demo and see how FelixaTouch can transform your practice.
+                Experience the complete feature suite with a free demo today and see how FelixaTouch can streamline your clinic operations.
               </p>
-              <Link href="/contact">
-                <Button size="lg">
-                  Request a Demo <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/contact">
+                  <Button size="lg">
+                    Book Free Demo
+                  </Button>
+                </Link>
+                <Link href="/products/felixacare">
+                  <Button size="lg" variant="outline">
+                    Explore FelixaCare
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
