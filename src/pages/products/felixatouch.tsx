@@ -10,7 +10,8 @@ import {
   FileText, Users, Calendar, Monitor, Pill, 
   FlaskConical, ClipboardList, MessageSquare, CalendarCheck, FileEdit,
   Package, CreditCard, Shield, TrendingUp, Award,
-  BarChart3, Calendar as CalendarIcon, Database, Laptop, ClipboardCheck, Gift
+  BarChart3, Calendar as CalendarIcon, Database, Laptop, ClipboardCheck, Gift,
+  Stethoscope, Leaf, Sparkles, Heart, Activity, Droplets
 } from "lucide-react";
 
 export default function FelixaTouch() {
@@ -351,6 +352,100 @@ export default function FelixaTouch() {
                   </p>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Medical Fraternity Coverage */}
+        <section className="py-16 md:py-24 pattern-diagonal text-white">
+          <div className="container">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Versatile Healthcare Solution</h2>
+                <p className="text-lg text-white/90 max-w-2xl mx-auto">
+                  FelixaTouch adapts to your practice specialty. Whether you practice modern medicine or traditional healing systems, our software is designed to support your unique workflow.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card className="bg-white border">
+                  <CardContent className="pt-6">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                      <Stethoscope className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">Modern Medicine</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Complete clinical workflows for allopathic practices with advanced EMR, prescriptions, lab integration, and imaging support.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border">
+                  <CardContent className="pt-6">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                      <Leaf className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">Unani Medicine</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Customized templates for Unani practitioners with support for traditional diagnostics, herbal prescriptions, and holistic treatment plans.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border">
+                  <CardContent className="pt-6">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                      <Sparkles className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">Ayurvedic Medicine</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Specialized features for Ayurvedic clinics including Prakriti assessment, dosha-based treatments, and Panchakarma therapy management.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border">
+                  <CardContent className="pt-6">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                      <Activity className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">Physiotherapy</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Session tracking, exercise protocols, progress monitoring, and outcome measurements tailored for physiotherapy practices.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border">
+                  <CardContent className="pt-6">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                      <Heart className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">Wellness Centers</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Package management, membership tracking, and integrated billing for spas, wellness clinics, and holistic health centers.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white border">
+                  <CardContent className="pt-6">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                      <Droplets className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">Naturopathy</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Support for natural healing modalities with diet planning, lifestyle counseling, and alternative therapy documentation.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="mt-12 text-center">
+                <p className="text-lg text-white/90 max-w-3xl mx-auto">
+                  No matter your medical specialty, FelixaTouch provides the flexibility and features you need to deliver exceptional patient care while managing your practice efficiently.
+                </p>
+              </div>
             </div>
           </div>
         </section>
