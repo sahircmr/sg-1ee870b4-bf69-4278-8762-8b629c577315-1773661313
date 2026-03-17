@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Code, Smartphone, Brain, LineChart, Zap, Hospital } from "lucide-react";
+import { ArrowRight, Code, Smartphone, Brain, LineChart, Zap, Hospital, Globe } from "lucide-react";
 
 export default function Home() {
   return (
