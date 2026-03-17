@@ -8,7 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { 
   FileText, Users, Calendar, Monitor, Pill, 
-  Flask, ClipboardList, MessageSquare, CalendarCheck, FileEdit,
+  FlaskConical, ClipboardList, MessageSquare, CalendarCheck, FileEdit,
   Package, CreditCard, Shield, TrendingUp, Award,
   BarChart3, Calendar as CalendarIcon, Database, Laptop
 } from "lucide-react";
@@ -151,7 +151,7 @@ export default function FelixaTouch() {
               <Card className="bg-white border hover:border-primary/30 transition-colors">
                 <CardContent className="pt-6">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <Flask className="h-6 w-6 text-primary" />
+                    <FlaskConical className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Lab Management</h3>
                   <p className="text-muted-foreground text-sm">
