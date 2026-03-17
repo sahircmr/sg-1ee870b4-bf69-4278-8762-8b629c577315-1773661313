@@ -310,94 +310,160 @@ export default function Home() {
             <div className="mx-auto max-w-3xl text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Leading Organizations</h2>
               <p className="text-lg text-muted-foreground">
-                Our clients include some of the world's most innovative and respected companies
+                Our clients span healthcare, enterprise, and education sectors across the globe
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              {/* Google */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* AryalCare */}
               <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader className="text-center">
-                  <div className="mb-4 flex justify-center">
-                    <Image 
-                      src="/google-logo.png" 
-                      alt="Google" 
-                      width={200} 
-                      height={80}
-                      className="object-contain"
-                    />
-                  </div>
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
                   <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
-                    Global Leader
+                    Healthcare · Costa Rica
                   </div>
-                  <CardTitle className="text-xl">Google</CardTitle>
+                  <CardTitle className="text-xl">AryalCare</CardTitle>
                   <CardDescription>
-                    Trusted partner for cutting-edge AI and web solutions
+                    Healthcare solutions provider in Costa Rica
                   </CardDescription>
                 </CardHeader>
               </Card>
 
-              {/* Apple */}
+              {/* SVPR */}
               <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader className="text-center">
-                  <div className="mb-4 flex justify-center">
-                    <Image 
-                      src="/apple-logo.png" 
-                      alt="Apple" 
-                      width={200} 
-                      height={80}
-                      className="object-contain"
-                    />
-                  </div>
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
                   <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
-                    Innovation Pioneers
+                    Healthcare · Malta
                   </div>
-                  <CardTitle className="text-xl">Apple</CardTitle>
+                  <CardTitle className="text-xl">SVPR</CardTitle>
                   <CardDescription>
-                    Partnered on iOS and enterprise software development
+                    Leading healthcare organization in Malta
                   </CardDescription>
                 </CardHeader>
               </Card>
 
-              {/* IBM */}
+              {/* CareNCure */}
               <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader className="text-center">
-                  <div className="mb-4 flex justify-center">
-                    <Image 
-                      src="/ibm-logo.png" 
-                      alt="IBM" 
-                      width={200} 
-                      height={80}
-                      className="object-contain"
-                    />
-                  </div>
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
                   <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
-                    Technology Giant
+                    Healthcare · Qatar
                   </div>
-                  <CardTitle className="text-xl">IBM</CardTitle>
+                  <CardTitle className="text-xl">CareNCure</CardTitle>
                   <CardDescription>
-                    Collaborated on AI-driven enterprise platforms
+                    Comprehensive healthcare services in Qatar
                   </CardDescription>
                 </CardHeader>
               </Card>
 
-              {/* Salesforce */}
+              {/* Peace Village */}
               <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader className="text-center">
-                  <div className="mb-4 flex justify-center">
-                    <Image 
-                      src="/salesforce-logo.png" 
-                      alt="Salesforce" 
-                      width={200} 
-                      height={80}
-                      className="object-contain"
-                    />
-                  </div>
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
                   <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
-                    Cloud Solutions
+                    Healthcare · India
                   </div>
-                  <CardTitle className="text-xl">Salesforce</CardTitle>
+                  <CardTitle className="text-xl">Peace Village</CardTitle>
                   <CardDescription>
-                    Built custom CRM and AI-powered sales tools
+                    Care facility in Wayanad, India
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* ASA Clinic */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Healthcare · UAE
+                  </div>
+                  <CardTitle className="text-xl">ASA Clinic</CardTitle>
+                  <CardDescription>
+                    Advanced healthcare clinic in United Arab Emirates
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* hausarzt-praxis Hildesheim */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Healthcare · Germany
+                  </div>
+                  <CardTitle className="text-xl">hausarzt-praxis Hildesheim</CardTitle>
+                  <CardDescription>
+                    Family practice in Hildesheim, Germany
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* Calicut Unani */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Healthcare · India
+                  </div>
+                  <CardTitle className="text-xl">Calicut Unani and Research Centre</CardTitle>
+                  <CardDescription>
+                    Traditional medicine and research in Kozhikode, India
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* Pasta Evangelists */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Enterprise · UK
+                  </div>
+                  <CardTitle className="text-xl">Pasta Evangelists</CardTitle>
+                  <CardDescription>
+                    Premium fresh pasta delivery service in United Kingdom
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* MPF Pharma */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Pharmaceutical · Costa Rica
+                  </div>
+                  <CardTitle className="text-xl">MPF Pharma</CardTitle>
+                  <CardDescription>
+                    Pharmaceutical solutions provider in Costa Rica
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* Mitas UK */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Enterprise · UK
+                  </div>
+                  <CardTitle className="text-xl">Mitas UK</CardTitle>
+                  <CardDescription>
+                    Enterprise solutions provider in United Kingdom
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* NIT Kozhikode */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Education · India
+                  </div>
+                  <CardTitle className="text-xl">National Institute of Technology</CardTitle>
+                  <CardDescription>
+                    Premier technical institution in Kozhikode, India
                   </CardDescription>
                 </CardHeader>
               </Card>
