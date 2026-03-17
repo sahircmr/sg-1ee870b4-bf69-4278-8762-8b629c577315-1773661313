@@ -304,6 +304,107 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Trusted by Leading Organizations */}
+        <section className="py-16 md:py-24 bg-muted/30">
+          <div className="container">
+            <div className="mx-auto max-w-3xl text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Leading Organizations</h2>
+              <p className="text-lg text-muted-foreground">
+                Our clients include some of the world's most innovative and respected companies
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              {/* Google */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <Image 
+                      src="/google-logo.png" 
+                      alt="Google" 
+                      width={200} 
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Global Leader
+                  </div>
+                  <CardTitle className="text-xl">Google</CardTitle>
+                  <CardDescription>
+                    Trusted partner for cutting-edge AI and web solutions
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* Apple */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <Image 
+                      src="/apple-logo.png" 
+                      alt="Apple" 
+                      width={200} 
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Innovation Pioneers
+                  </div>
+                  <CardTitle className="text-xl">Apple</CardTitle>
+                  <CardDescription>
+                    Partnered on iOS and enterprise software development
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* IBM */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <Image 
+                      src="/ibm-logo.png" 
+                      alt="IBM" 
+                      width={200} 
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Technology Giant
+                  </div>
+                  <CardTitle className="text-xl">IBM</CardTitle>
+                  <CardDescription>
+                    Collaborated on AI-driven enterprise platforms
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+
+              {/* Salesforce */}
+              <Card className="bg-card border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <Image 
+                      src="/salesforce-logo.png" 
+                      alt="Salesforce" 
+                      width={200} 
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-3">
+                    Cloud Solutions
+                  </div>
+                  <CardTitle className="text-xl">Salesforce</CardTitle>
+                  <CardDescription>
+                    Built custom CRM and AI-powered sales tools
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-16 md:py-24 pattern-grid">
           <div className="container">
