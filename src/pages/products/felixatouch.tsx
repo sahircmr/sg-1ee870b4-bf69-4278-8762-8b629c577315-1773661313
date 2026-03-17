@@ -10,7 +10,7 @@ import {
   FileText, Users, Calendar, Monitor, Pill, 
   FlaskConical, ClipboardList, MessageSquare, CalendarCheck, FileEdit,
   Package, CreditCard, Shield, TrendingUp, Award,
-  BarChart3, Calendar as CalendarIcon, Database, Laptop
+  BarChart3, Calendar as CalendarIcon, Database, Laptop, ClipboardCheck, Gift
 } from "lucide-react";
 
 export default function FelixaTouch() {
@@ -324,6 +324,30 @@ export default function FelixaTouch() {
                   <h3 className="text-xl font-semibold mb-2">Unlimited Patient Records</h3>
                   <p className="text-muted-foreground text-sm">
                     Securely store unlimited patient records with easy access and seamless management. Cloud-based storage ensures data safety.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <ClipboardCheck className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Intuitive Treatment Planning</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Create comprehensive treatment plans with procedures, sessions, medication, and payment details. Track patient progress effortlessly.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border hover:border-primary/30 transition-colors">
+                <CardContent className="pt-6">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Gift className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Business-Friendly Package Management</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Choose the right package for patients from your list and track progress with an easy billing and payment system.
                   </p>
                 </CardContent>
               </Card>
